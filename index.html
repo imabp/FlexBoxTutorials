@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/code.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/bg.css">
+    <link rel="stylesheet" href="./css/examples.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script dfer src="./js/scroll.js"></script>
+    <title>FlexBox Tutorials</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>FlexBox Tutorials</h1>
+    </div>
+
+    <div id="main-content">
+        <div class="panel" data-color="white">
+            <h2>What is FlexBox?</h2>
+            <p><b>Idea behind flexbox </b> is to give the container an <b>ability to alter the items present inside
+                    it</b>, in order to
+                <b>fill the available space in best way</b>. Flexbox is a whole module and not a single property, it
+                involves a
+                lot of things including its whole set of properties. Some of them are meant to be set on the
+                <b>container</b>
+                (parent element, known as “flex container”) whereas the others are meant to be set on the
+                <b>children</b>
+                (said “flex items”).<br><br>
+                A flex layout looks like this one:<br> ( <b>Remember: Items can be laid out <b>either</b> along the
+                    <b>main axis</b> or along <b>cross axis</b></b> ) <br>
+                <center><img id=flexlayout src="terms.svg" alt="" height="80%" width="80%"></center>
+
+
+            </p>
+
+            <h2>Why FlexBox?</h2>
+            <p>It is very helpful and dev favorite and specially used in designing a website for small screened devices.
+            </p>
+            <center>
+                <h1 class=heading style="padding-left:0; opacity:0.7">Basics First</h1>
+            </center>
+            <br>
+            <!-- interaction -->
+            <div class="knowledge">
+                <h2 class='learnheading'>Quick Interaction:</h2>
+                I have created a <span class="el">div</span>
+                and inside it, I created three more divs with all of them having class as <span class="el">box</span>.
+                Without flex, it looks like this:
+            </div><br>
+
+            <!-- example 1 no flex -->
+            <h2>Without Flex</h2><br>
+            <div class="no-flex-1">
+                <div class="box redbg">1</div>
+                <div class="box orangebg">2</div>
+                <div class="box greenbg">3</div>
+            </div>
+            <br>
+            <!-- interaction -->
+            <div class="knowledge">
+                <h2 class='learnheading'>Quick Interaction:</h2>
+                Now lets add a class <span class="el">flex-container-1</span> to the <b>parent </b> <span
+                    class="el">div</span> with following properties and values:
+                <br><br>
+                <div class=code cols="30" rows="10">
+                    <span class="selector">.flex-container-1</span><span class="braces">{</span><br>
+                    <span class="property">display</span>:flex;<br>
+                    <span class="property">border</span>:2px dashed blue;<br>
+                    <span class="property">padding</span>:20px;<br>
+                    <span class="braces"> }</span>
+                </div>
+            </div>
+            <br><br>
+            <!--example 1 with flex  -->
+            <h2>Using Flex</h2><br>
+            <div class="flex-container-1">
+                <div class="box redbg">1</div>
+                <div class="box orangebg">2</div>
+                <div class="box greenbg">3</div>
+            </div><br><br>
+            <div class="knowledge">
+                <h2 class='learnheading'>Quick Interaction:</h2>
+                Woo thats magic!! Isn't it so?<br><br>
+                <span class="el">display:flex</span> has arranged all the boxes inside the parent div. <br>
+                Parent <span class="el">div</span> is bordered with blue color
+                <br><br>
+            </div><br><br>
+            <div class="lout">
+                <center>
+                    <h2>Learning Outcome</h2>
+                </center>
+                <p>We learnt that flex is applied to the parent container, in order to see the results in
+                    children items. Flexbox has two kind of variation in properties, one is for children and
+                    another one is for the parent itself.<br><br>
+                    <b> In next section, we will be seeing properties of parent container.</b></p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div class="panel" data-color="orange">
+            <center>
+                <h1 class=heading style="padding-left:0; opacity:0.7">Properties Of Parent Container</h1>
+            </center><br><br>
+            <div class="knowledge">
+                <h2 class='learnheading'>Quick Interaction:</h2>
+                So last section we created a parent <span class="el">div</span> with class as <span
+                    class="el">flex-container-1</span> (See code here.) and it had three boxes. Now lets take the same
+                parent again and lets see the properties of parent one by one.
+            </div><br>
+            <br>
+            <div class="parentproperty">
+                <h2>flex-direction</h2>
+                <p>As the name itself says, it is related to flex direction. So if you recall, about our discussion on
+                    flex layout( <a href="#flexlayout">see it here</a> ), we said there are two axis, one is main axis
+                    (row) and other one is cross axis (column). We can arrange the children(flex-items) along these axis in any form i.e. along row or along column or in reverse order in a row as well as in column. <br>So lets see <span class="el">flex-direction</span> in
+                    action:
+                    
+                    <center><span class="el" style="background-color: black;">flex-direction:'row |column | row-reverse
+                            | column-reverse'</span></center>
+                </p>
+                <div class="code">
+                    <span class="selector">.flex-container-1</span><span class="braces">{</span><br>
+                    <span class="property">display</span>:flex;<br>
+                    <span class="property impProp">flex-direction</span><span class="impProp"> : row;</span><br>
+                    <span class="property">border</span>:2px dashed blue; <br>
+                    <span class="property">padding</span>:20px;<br>
+                    <span class="braces"> }</span>
+                </div><br>
+                <div class="flex-container-2">
+                    <div class="box redbg">1</div>
+                    <div class="box orangebg">2</div>
+                    <div class="box greenbg">3</div>
+                </div><br><br><br>
+                <div class="code">
+                    <span class="selector">.flex-container-1</span><span class="braces">{</span><br>
+                    <span class="property">display</span>:flex;<br>
+                    <span class="property impProp">flex-direction</span><span class="impProp"> : row-reverse;</span><br>
+                    <span class="property">border</span>:2px dashed blue; <br>
+                    <span class="property">padding</span>:20px;<br>
+                    <span class="braces"> }</span></div><br>
+                <div class="flex-container-3">
+                    <div class="box redbg">1</div>
+                    <div class="box orangebg">2</div>
+                    <div class="box greenbg">3</div>
+                </div><br>
+                <br>
+                <div class="code">
+                    <span class="selector">.flex-container-1</span><span class="braces">{</span><br>
+                    <span class="property">display</span>:flex;<br>
+                    <span class="property impProp">flex-direction</span><span class="impProp"> : column;</span><br>
+                    <span class="property">border</span>:2px dashed blue; <br>
+                    <span class="property">padding</span>:20px;<br>
+                    <span class="braces"> }</span></div><br>
+                <div class="flex-container-4">
+                    <div class="box redbg">1</div>
+                    <div class="box orangebg">2</div>
+                    <div class="box greenbg">3</div>
+                </div><br>
+                <div class="code">
+                    <span class="selector">.flex-container-1</span><span class="braces">{</span><br>
+                    <span class="property">display</span>:flex;<br>
+                    <span class="property impProp">flex-direction</span><span class="impProp"> : column-reverse;</span><br>
+                    <span class="property">border</span>:2px dashed blue; <br>
+                    <span class="property">padding</span>:20px;<br>
+                    <span class="braces"> }</span></div><br>
+                    <div class="flex-container-5">
+                        <div class="box redbg">1</div>
+                        <div class="box orangebg">2</div>
+                        <div class="box greenbg">3</div>
+                    </div><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

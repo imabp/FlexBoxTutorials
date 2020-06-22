@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html {
+    --scrollbarBG: green;
+    --thumbBG: orange
+  }
+  body::-webkit-scrollbar {
+    width: 20px;
+    height:1px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+a{
+    text-decoration: none;
+    background:blue;
+    color:white;
+    padding-right: 5px;;
+    padding-left: 5px;
+    padding-bottom:2px;
+    padding-top: 2px;
+    border-radius: 5px;
+}
+a:hover{
+    background:yellowgreen;
+    color:white;
+    
+}
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+.heading > div{
+    display: inline;
+} 
+.heading{
+    display: flex;
+    font-family: 'MuseoModerno', cursive !important;
+    color:white;
+    padding-left:5vw;
+    background-color: red;
+    font-size: larger;
+    border:red 2px solid;;
+    display:block;
+    padding-top:1vw;
+    padding-bottom:1vw;
+}
+p{
+    padding-top:1vw;
+    padding-bottom:1vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#main-content{
+    margin-left:10vw;
+    margin-right:10vw;
+    padding-top:1vw;
+    }
+.knowledge{
+    background-color: lightgoldenrodyellow;
+    word-wrap: break-word;
+    padding:10px 10px 10px 10px;
+    border-radius:5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.lout{
+    background-color: #fa4700c9;
+    word-wrap: break-word;
+    padding:10px 10px 10px 10px;
+    border-radius:5px;
+    text-align: justify;
+    text-justify: inter-word;     
+    color:white;
+}
+.parentproperty{
+    background-color: whitesmoke;
+    word-wrap: break-word;
+    padding:10px 10px 10px 10px;
+    border-radius:5px;
+    text-align: justify;
+    text-justify: inter-word;     
+    color:purple;
+}
+.parentproperty > h2{
+    font-family: 'MuseoModerno', cursive !important;
+    color:purple;
+}

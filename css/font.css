@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+h2,h3,h4,h5,h6{
+    font-family: 'Acme', sans-serif;
+}
+
+p{
+    font-family: 'Tenor Sans', sans-serif;
+}
+.learnheading{
+    font-family: 'Rajdhani', sans-serif;
+}
+.knowledge{
+    font-family: 'Tenor Sans', sans-serif;
+}
